@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://cam3o2q7os8j2"]
+
+[ext_resource type="Texture2D" uid="uid://dnue61r7ou8o5" path="res://Assets/UI/Health_Tab/69.png" id="1_kdgfn"]
+[ext_resource type="Script" path="res://Scenes/health_bar.gd" id="2_7ejiq"]
+[ext_resource type="Texture2D" uid="uid://hhwiqaopdjh2" path="res://Assets/UI/Health_Tab/Progress Bars/WhiteBar/1.png" id="2_woh77"]
+[ext_resource type="Texture2D" uid="uid://tesohtagd3cd" path="res://Assets/UI/Health_Tab/Progress Bars/WhiteBar/2.png" id="4_xi2du"]
+[ext_resource type="Texture2D" uid="uid://bcxid7x0tjf5" path="res://Assets/UI/Health_Tab/Progress Bars/WhiteBar/3.png" id="5_udywg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 74.0
+scale = Vector2(2, 1.273)
+texture = ExtResource("1_kdgfn")
+
+[node name="HealthBar" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_7ejiq")
+
+[node name="BarInitial" type="TextureRect" parent="HealthBar"]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 22.0
+offset_right = 106.0
+offset_bottom = 62.0
+texture = ExtResource("2_woh77")
+
+[node name="BarMiddle" type="TextureRect" parent="HealthBar"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 22.0
+offset_right = 122.0
+offset_bottom = 62.0
+texture = ExtResource("4_xi2du")
+
+[node name="BarFinal" type="TextureRect" parent="HealthBar"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 22.0
+offset_right = 139.0
+offset_bottom = 62.0
+texture = ExtResource("5_udywg")

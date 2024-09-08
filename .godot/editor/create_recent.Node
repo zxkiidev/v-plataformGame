@@ -1,0 +1,14 @@
+TextureRect
+Control
+TextureProgressBar
+CollisionShape2D
+Area2D
+Label
+StaticBody2D
+Camera2D
+Sprite2D
+ParallaxLayer
+ParallaxBackground
+TileMapLayer
+TileMap
+CPUParticles2D
