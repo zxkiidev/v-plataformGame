@@ -22,7 +22,7 @@ func _physics_process(delta):
 
 func animUpdate():
 	if is_dashing:
-		animPlayer.play("Dash")
+		pass
 	elif velocity.x != 0:
 		animPlayer.play("Run")
 	elif Input.is_action_just_pressed("salto"):
